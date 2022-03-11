@@ -23,7 +23,7 @@ export default function ProductPopUp({closeModal, name, price, rating, image, li
                         <h3 className="text-xl font-semibold">$ {price} </h3>
                         <Rating rating={rating}/><br/>
                     </div>
-                    <button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' src={link}>Buy Now</button>
+                    <a className='text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' src={link} target="_blank">Buy Now</a>
                 </div>
 
                 
