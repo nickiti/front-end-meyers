@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# front end test
+The exercise was created using React and redux for javascript functionalities and components with tailwind used for CSS styling. 
+The project is a product listing page from data fetched from the endpoint url http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The products are rendered in a grid format and a side navigation column for filtering components. The filtering component does not have complete functionality. Pagination was implemented and works to seperate products for better UI. 
 
-## Available Scripts
+## TO START 
+
+1. make sure npm is installed
+2. npm install
+3. make sure tailwind css is installed "npm install tailwind"
+4. install react-paginate "npm install react-paginate"
 
 In the project directory, you can run:
 
