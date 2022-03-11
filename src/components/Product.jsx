@@ -30,7 +30,7 @@ export default function Product(props) {
                 rating={props.rating}
                 image={props.image_link || `https://via.placeholder.com/150/92c952`}
                 link = {props.product_link }
-                desc = {props.description || "Can't find description, sorry..."}
+                desc = {props.description || "Can't load description sorry... &#128557;"}
                 />}
         </>
     )
