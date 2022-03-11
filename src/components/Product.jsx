@@ -29,7 +29,7 @@ export default function Product(props) {
                 price={props.price}
                 rating={props.rating}
                 image={props.image_link || `https://via.placeholder.com/150/92c952`}
-                link = {props.product_link }
+                link = {props.product_link || 'https://www.amazon.com/s?k=make+up&crid=2D0OMKKLD249H&sprefix=make+up%2Caps%2C193&ref=nb_sb_noss_1'}
                 desc = {props.description || "Can't load description sorry... &#128557;"}
                 />}
         </>
