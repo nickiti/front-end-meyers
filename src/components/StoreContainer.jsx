@@ -9,7 +9,7 @@ export default function StoreContainer() {
     //gets data from endpoint using custom hook
     let [products] = useEndpoint()
     const [currentPage, setCurrentPage] = useState(0);
-    const PER_PAGE = 10;
+    const PER_PAGE = 9;
     const offset = currentPage * PER_PAGE;
     const pageCount = Math.ceil( products === null ? 10 : products.length / PER_PAGE);
 
