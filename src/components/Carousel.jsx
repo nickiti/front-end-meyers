@@ -1,7 +1,6 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "react-feather"
 import { RxDotFilled } from 'react-icons/rx';
-import { useMediaQuery } from "react-responsive";
 
 export default function Carousel(slides) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,6 +27,7 @@ export default function Carousel(slides) {
     <div className={`max-w-[250px] h-[250px] pt-0 pb-0 mt-0 mb-5 m-auto py-4 px-4 relative group`} >
       <img
         src={ slides.images[currentIndex] }
+        alt={slideIndex}
         className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
       /> 
       { slides.images.length > 1 &&

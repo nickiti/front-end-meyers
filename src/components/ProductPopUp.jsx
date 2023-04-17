@@ -25,7 +25,7 @@ export default function ProductPopUp({closeModal, name, images, desc }) {
                         <h1 className="uppercase text-black text-2xl font-medium">{name}</h1>
                         <h4 className='text-black font-bold text-xl mt-4'>Description:</h4>
                         <small className="text-black"> {desc} </small>
-                        <a className='text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5' href="tel:(682)-433-4835" target="_blank">Call</a>
+                        <a className='text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5' href="tel:(682)-433-4835" target="_blank" rel='noreferrer'>Call</a>
                     </div>
 
                 </div>
@@ -45,7 +45,7 @@ export default function ProductPopUp({closeModal, name, images, desc }) {
                         <h1 className="uppercase text-black text-2xl font-medium">{name}</h1>
                         <h4 className='text-black font-bold text-xl mt-4'>Description:</h4>
                         <small className="text-black"> {desc} </small>
-                        <a className='text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 pr-2' href="tel:(682)-433-4835" target="_blank">Call</a>
+                        <a className='text-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 pr-2' href="tel:(682)-433-4835" target="_blank" rel='noreferrer'>Call</a>
                     </div>
             </div>
         }

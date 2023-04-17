@@ -12,8 +12,6 @@ import img9 from '../assets/IMG_8923_1.jpg';
 import img10 from '../assets/IMG_8948-Edit.jpg';
 import img11 from '../assets/IMG_8961-Edit.jpg';
 import img12 from '../assets/Untitled-1.jpg';
-import ReactPaginate from 'react-paginate'
-import {BsChevronLeft, BsChevronRight} from 'react-icons/bs'
 import { useMediaQuery } from 'react-responsive';
 
 //container for products
@@ -74,12 +72,12 @@ export default function StoreContainer() {
     const [currentPage, setCurrentPage] = useState(0);
     const PER_PAGE = 9;
     const offset = currentPage * PER_PAGE;
-    const pageCount = Math.ceil( products === null ? 10 : products.length / PER_PAGE);
+    // const pageCount = Math.ceil( products === null ? 10 : products.length / PER_PAGE);
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
 
-    function handlePageClick({ selected: selectedPage }) {
-        setCurrentPage(selectedPage);
-    }
+    // function handlePageClick({ selected: selectedPage }) {
+    //     setCurrentPage(selectedPage);
+    // }
 
     return(
         <>
