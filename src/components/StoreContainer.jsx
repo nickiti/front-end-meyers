@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Product from './Product'
 import img1 from '../assets/IMG_4630.jpg';
 import img2 from '../assets/IMG_8847.jpg';
@@ -69,9 +69,9 @@ export default function StoreContainer() {
             desc: "Fish shooting game. Shoot fish to win grand prize. Plays up to 3-players per table."
         }
     ] 
-    const [currentPage, setCurrentPage] = useState(0);
+    // const [currentPage, setCurrentPage] = useState(0);
     const PER_PAGE = 9;
-    const offset = currentPage * PER_PAGE;
+    const offset = 0 * PER_PAGE;
     // const pageCount = Math.ceil( products === null ? 10 : products.length / PER_PAGE);
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
 

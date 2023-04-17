@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import ProductPopUp from './ProductPopUp'
-import Carousel from './Carousel';
 
 export default function Product(props) {
     //used to close and open modal
