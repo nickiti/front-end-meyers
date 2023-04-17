@@ -24,11 +24,12 @@ export default function Carousel(slides) {
   };
 
   return (
-    <div className={`max-w-[250px] h-[250px] pt-0 pb-0 mt-0 mb-5 m-auto py-4 px-4 relative group`} >
+    <div className={` pt-0 pb-0 mt-0 mb-5 m-auto py-4 px-4 relative group`} >
       <img
         src={ slides.images[currentIndex] }
         alt=''
-        className='w-full h-full rounded-2xl bg-center bg-cover duration-500'
+        className='max-w-[1000px] h-[1000px] w-full h-full rounded-2xl bg-center bg-cover duration-500 w-100
+        h-auto'
       /> 
       { slides.images.length > 1 &&
       <>
