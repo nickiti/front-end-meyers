@@ -82,8 +82,8 @@ export default function StoreContainer() {
     return(
         <>
         {!isMobile &&
-        <div className='flex flex-col w-screen overflow-hidden pt-24'>
-            <div className='grid grid-cols-4'>    
+        <div className='flex flex-col w-screen pt-11'>
+            <div className='grid grid-cols-2'>    
                 {products?.slice(offset, offset + PER_PAGE).map((product, i)=>{
                     return(
                         <Product 
@@ -101,7 +101,6 @@ export default function StoreContainer() {
         {
             isMobile && 
             <div className='flex flex-column'>
-                <div className='py-10'></div>
                 {products?.slice(offset, offset + PER_PAGE).map((product, i)=>{
                                 return(
                                     <Product 
@@ -114,7 +113,7 @@ export default function StoreContainer() {
                                 })}
             </div>
         }
-        <div className='pb-40 mt-4'></div>
+        <div className='pb-24 mt-4'></div>
         {/* { 
                     <ReactPaginate
                     className='flex flex-row justify-center content-center mt-5 mb-11 pb-24'

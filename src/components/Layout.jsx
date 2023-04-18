@@ -10,7 +10,7 @@ const [toggle, setToggle] = useState(false)
   return (
       <>
 
-<nav className="fixed z-50 overflow-hidden w-screen bg-gray-800 dark:border-gray-700">
+<nav className="text-left fixed z-50 overflow-hidden w-screen bg-gray-800 dark:border-gray-700">
   <div className="flex flex-wrap items-center justify-between mx-auto p-4">
       <div className="flex ">
           { !isMobile &&
@@ -24,7 +24,7 @@ const [toggle, setToggle] = useState(false)
 
             <div className="hidden w-full md:block md:w-auto ml-5" id="navbar-solid-bg">
                 <ul className="flex flex-col font-medium mt-2 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 text-white">
-                    <li>
+                    <li className="pr-0 mr-0">
                     <Link className="text-white hover:underline" to="/">Home</Link>        
                      </li>
                     <li>

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { ChevronLeft, ChevronRight } from "react-feather"
 import { RxDotFilled } from 'react-icons/rx';
 
-export default function Carousel(slides) {
+export default function Carousel(slides, height, width) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   console.log(slides)
@@ -24,12 +24,12 @@ export default function Carousel(slides) {
   };
 
   return (
-    <div className={` pt-0 pb-0 mt-0 mb-5 m-auto py-4 px-4 relative group`} >
+    <div className={`container pt-0 pb-0 mt-0 mb-5 m-auto py-4 px-4 relative group flex justify-center items-center flex-col`} >
       <img
         src={ slides.images[currentIndex] }
         alt=''
-        className='max-w-[1000px] h-[1000px] w-full h-full rounded-2xl bg-center bg-cover duration-500 w-100
-        h-auto'
+        className={`max-h-[${height}px] min-h-[${height}px] min-w-[${width}px] max-w-[${width}px] w-full h-full rounded-2xl bg-center bg-cover duration-500 w-100
+        h-auto`}
       /> 
       { slides.images.length > 1 &&
       <>
