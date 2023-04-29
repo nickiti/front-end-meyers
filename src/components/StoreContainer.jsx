@@ -82,7 +82,7 @@ export default function StoreContainer() {
     return(
         <>
         {!isMobile &&
-        <div className='flex flex-col w-screen pt-11'>
+        <div className='flex flex-col w-screen pt-24'>
             <div className='grid grid-cols-2'>    
                 {products?.slice(offset, offset + PER_PAGE).map((product, i)=>{
                     return(

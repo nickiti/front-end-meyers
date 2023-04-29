@@ -7,8 +7,9 @@ import { useMediaQuery } from 'react-responsive'
 
 
 
-export default function ProductPopUp({closeModal, name, images, desc }) {
+export default function ProductPopUp({closeModal, name, images, desc, height, width }) {
     const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
+    console.log(height)
     return (
         <>
         <DisableBodyScroll/>
@@ -19,13 +20,11 @@ export default function ProductPopUp({closeModal, name, images, desc }) {
     <div onClick={e => {
           // do not close modal if anything inside modal content is clicked
           e.stopPropagation();
-        }} class="w-full h-75 max-w-6xl rounded bg-white shadow-xl lg:p-20 mx-auto text-gray-800 relative md:text-left py-4">
+        }} class="card  w-full h-75 max-w-6xl rounded bg-white shadow-xl lg:p-20 mx-auto text-gray-800 relative md:text-left py-4">
              <button className='top-left text-2xl mt-3 mr-1 hover:text-gray-300 cursor-pointer' onClick={()=>{closeModal(false)}}><AiOutlineClose size={30}/></button>
         <div class="md:flex items-center -mx-10">
             <div class="w-full md:w-1/2 px-10">
-                <div>
-                    <Carousel className="w-full relative z-10" images={images}/>
-                </div>
+                <Carousel className="w-full relative z-10" height={height} width={width} images={images}/>
             </div>
             <div class="w-full md:w-1/2 px-10">
                 <div class="mb-10">
