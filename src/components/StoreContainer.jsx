@@ -83,7 +83,7 @@ export default function StoreContainer() {
         <>
         {!isMobile &&
         <div className='flex flex-col w-screen pt-24'>
-            <div className='grid grid-cols-2'>    
+            <div className='grid xl:grid-cols-4 md:grid-cols-2 lg-grid-cols-3'>    
                 {products?.slice(offset, offset + PER_PAGE).map((product, i)=>{
                     return(
                         <Product 
@@ -100,7 +100,7 @@ export default function StoreContainer() {
         }
         {
             isMobile && 
-            <div className='flex flex-column'>
+            <div className='flex flex-column pt-24'>
                 {products?.slice(offset, offset + PER_PAGE).map((product, i)=>{
                                 return(
                                     <Product 

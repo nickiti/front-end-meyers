@@ -22,18 +22,25 @@ html,body{
 	
 }
 
+@media only screen and (min-width: 740px)  {
+  .product-card {
+    height: 550px;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 740px)  {
+  .title-container {
+    height: 50px;
+    width: 100%;
+  }
+}
+
 
 
 /* 	Product details  */
 .product-details {
-	position: relative;
-	text-align: left;
-	overflow: hidden;
-	padding: 30px;
-	height: 100%;
-	float: left;
-	width: 40%;
-
+  height: 300px;
 }
 
 /* 	Product Name */
@@ -86,13 +93,10 @@ html,body{
 
 /* product image  */
 .product-image {
-	transition: all 0.3s ease-out;
-	position: relative;
-	overflow: hidden;
-	height: 100%;
-	float: right;
-	width: 50%;
+  height: 300px;
+  padding: 20px;
 }
+
 
 #container img {width: 100%;height: 100%;}
 
